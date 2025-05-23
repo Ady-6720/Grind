@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-pink-400;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-purple-500;
+  }
+  
+  .table-container {
+    @apply overflow-x-auto rounded-lg border border-surface;
+  }
+  
+  .table {
+    @apply min-w-full divide-y divide-surface;
+  }
+  
+  .table-header {
+    @apply bg-surface text-left text-sm font-semibold text-pink-100;
+  }
+  
+  .table-cell {
+    @apply whitespace-nowrap px-6 py-4 text-sm text-purple-200;
+  }
+  
+  .table-row {
+    @apply hover:bg-secondary/20 transition-colors;
+  }
+  
+  .checkbox-lg {
+    @apply w-6 h-6 accent-pink-400;
+  }
+}
